@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components {
+  .myContainer {
+  @apply container px-40 py-16 mx-auto
+  }
+
+  .underlin {
+    position: relative;
+    display: inline-block;
+  }
+  .underlin::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.5s ease-in-out;
+  }
+  .underlin:hover::after {
+    width: 100%;
+  }
+}
