@@ -1,5 +1,5 @@
 import NavBar from "./component/NavBar"
-import Manager from "./component/manager"
+import Manager from "./component/Manager"
 export default function App() {
 	return (
 		<>
